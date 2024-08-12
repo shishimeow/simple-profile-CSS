@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+nav, h2 {
+    font-family: 'Oregano';
+    color: #3C3633;
+}
+ 
+footer {
+    padding: 20px;
+    background-color: #E0CCBE;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+header {
+    display: inline
+}
+ 
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+    main p {
+        font-size: 12px;
+    }
+}
+   
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+    main p {
+        font-size: 12px;
+    }
+}
+ 
+nav {
+    background-color: #E0CCBE;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+ 
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+ 
+nav li {
+    list-style-type: none;
+}
+ 
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+ 
+main p {
+    font-family: "Dosis";
+    text-align: justify;
+}
+ 
+table {
+    text-align: left;
+    letter-spacing: 1px;
+}
+ 
+
+aside h2 {
+    letter-spacing: 3px;
+}
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    z-index: 1;
+}
+ 
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+ 
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ 
+.bigtitle {
+    padding: 30px;
+    background-color: #EEEDEB;
+    text-align: center;
+}
+ 
+.bigtitle h1 {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    margin: 0;
+}
+ 
+.bigtitle p {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+ 
+.card {
+    box-shadow: 0 4px 8px 0 #E0CCBE;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+ 
+.card-list {
+    box-shadow: 0 4px 8px 0 #E0CCBE;
+    border-radius: 5px;
+    text-align: left;
+    width: 40vh;
+    height: 60vh;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: auto;
+}
+ 
+.featured-image {
+    width: 60%;
+    height: 60%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+ 
+#highlight img {
+    margin: 3px;
+}
+ 
+.profile-image {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+ 
+#contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+ 
+aside svg {
+    width: 50px;
+}
+ 
+#content {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 5;
+    gap: 1.5rem;
+}
+ 
+#content h2 {
+    letter-spacing: 3px;
+    margin: 0;
+}
+ 
+#list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+ 
